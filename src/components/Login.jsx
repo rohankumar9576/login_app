@@ -27,7 +27,7 @@ function Login() {
     };
 
     let response=axios
-      .post("http://localhost:4000/user/login", user)
+      .post("https://magnificent-blue-caiman.cyclic.app/user/login", user)
       .then((response) => {
         console.log(response.data.data._id)
        window.localStorage.setItem("userId", response.data.data._id);
