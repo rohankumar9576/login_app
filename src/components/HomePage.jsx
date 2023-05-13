@@ -10,7 +10,7 @@ function HomePage() {
   useEffect(() => {
     async function getData() {
       if (!isLoggedIn) return;
-      let response = await axios.get(`http://localhost:4000/user/details/${isLoggedIn}`);
+      let response = await axios.get(`https://magnificent-blue-caiman.cyclic.app/user/details/${isLoggedIn}`);
       setData(response.data.data);
       console.log(response.data.data);
     }
