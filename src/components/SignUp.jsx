@@ -32,7 +32,7 @@ function Signup() {
     };
 
     try {
-      const response = await axios.post("http://localhost:4000/user/register", user);
+      const response = await axios.post("https://magnificent-blue-caiman.cyclic.app/user/register", user);
       console.log(response);
       navigate("/login");
     } catch (error) {
